@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zaac Shoe Collections</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+      .logo img {
+    height: 60px;
+    width: auto;
+      }
+
+
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .product-section {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+
+    .navbar2 {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar2 button {
+      color: black;
+      height: 40px;
+      width: 70px;
+      background-color: white;
+      border: 1px solid white;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #007bff;
+    }
+
+    .carousel-item {
+      transition: 1s;
+      height: 700px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 29px;
+      margin-bottom: 29px;
+      font-weight: 600;
+    }
+
+    footer {
+      background-color: #222;
+      color: #f1f1f1;
+      padding: 40px 0;
+    }
+
+    footer .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      text-align: center;
+      gap: 40px;
+    }
+
+    footer h5 {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    footer a {
+      color: #f1f1f1;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    footer a:hover {
+      color: #ffce00;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid #444;
+      padding-top: 15px;
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-item {
+        height: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="container-fluid border border-2 d-flex flex-wrap justify-content-between align-items-center gap-5">
+    <div class="logo">
+      <img class="border border-3 rounded-circle" src="shoes logo.jpg" alt="logo"/>
+    </div>
+
+    <nav class="nav d-none d-sm-block">
+      <ul class="nav gap-3">
+        <a href="index07.html"><li>Home</li></a>
+        <a href="aboutus.html"><li>About</li></a>
+        <a href="collection.html"><li>Collections</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+        <li><input type="search" placeholder="Search items" /></li>
+      </ul>
+    </nav>
+
+    <div class="navbar2">
+      <button><i class="bi bi-cart"></i></button>
+      <button><i class="bi bi-person-fill-add"></i></button>
+      <button><i class="bi bi-person-fill-check"></i></button>
+    </div>
+  </header>
+
+  <!-- Carousel -->
+  <section class="container mt-4">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Black and Gray New Arrival Poster Landscape.png" class="d-block w-100" alt="Sneakers">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sneakers</h5>
+            <p>New look of Sneakers shoes</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Blue Simple Shoes Sale  (Banner (Landscape)).png" class="d-block w-100" alt="Red Shoe">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Red Leather Shoe</h5>
+            <p>Stylish design with comfort</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Shoes Sale (Card (Landscape)).png" class="d-block w-100" alt="Oxford Shoe">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Oxford Brown Shoe</h5>
+            <p>Classic design for business attire</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Products: All Categories -->
+  <section class="container product-section">
+    <h1>Casual Shoes Collections</h1>
+    <div class="row g-4">
+      <div class="col-md-3 col-sm-6"><div class="card"><img src="causual.jpeg" class="card-img-top"><div class="card-body text-center"><h5 class="card-title">Casual Shoe</h5><p>Casual shoes with latest design</p><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div>
+      <div class="col-md-3 col-sm-6"><div class="card"><img src="causualb.avif" class="card-img-top"><div class="card-body text-center"><h5 class="card-title">Casual Shoe</h5><p>Latest casual collection</p><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div>
+      <div class="col-md-3 col-sm-6"><div class="card"><img src="causuals.webp" class="card-img-top"><div class="card-body text-center"><h5 class="card-title">Casual Shoe</h5><p>Comfort & style in one pair</p><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div>
+      <div class="col-md-3 col-sm-6"><div class="card"><img src="egos.webp" class="card-img-top"><div class="card-body text-center"><h5 class="card-title">Casual Shoe</h5><p>Durable and elegant finish</p><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div>
+    </div>
+  </section>
+
+  <section class="container product-section">
+    <h1>Loafers Shoes Collections</h1>
+    <div class="row g-4">
+      <div class="col-md-3 col-sm-6"><div class="card"><img src="lofersbrown.jpg" class="card-img-top"><div class="card-body text-center"><h5 class="card-title">Loafer Shoe</h5><p>Classic brown leather loafers</p><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div>
+      <div class="col-md-3 col-sm-6"><div class="card"><img src="lofers.jpeg" class="card-img-top"><div class="card-body text-center"><h5 class="card-title">Loafer Shoe</h5><p>Elegant and modern style</p><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div>
+      <div class="col-md-3 col-sm-6"><div class="card"><img src="lofersb.webp" class="card-img-top"><div class="card-body text-center"><h5 class="card-title">Loafer Shoe</h5><p>Premium finish loafers</p><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div>
+      <div class="col-md-3 col-sm-6"><div class="card"><img src="brown lofers.webp" class="card-img-top"><div class="card-body text-center"><h5 class="card-title">Loafer Shoe</h5><p>Comfort and fashion combined</p><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div>
+    </div>
+  </section>
+
+  <section class="container product-section">
+    <h1>Sneakers Shoes Collections</h1>
+    <div class="row g-4">
+      <div class="col-md-3 col-sm-6"><div class="card"><img src="whites.jpg" class="card-img-top"><div class="card-body text-center"><h5 class="card-title">Sneakers</h5><p>White sneakers for all outfits</p><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div>
+      <div class="col-md-3 col-sm-6"><div class="card"><img src="white snekers.jpg" class="card-img-top"><div class="card-body text-center"><h5 class="card-title">Sneakers</h5><p>Stylish everyday sneakers</p><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div>
+      <div class="col-md-3 col-sm-6"><div class="card"><img src="bsneakers.jpeg" class="card-img-top"><div class="card-body text-center"><h5 class="card-title">Sneakers</h5><p>Black edition with comfort</p><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div>
+      <div class="col-md-3 col-sm-6"><div class="card"><img src="wsneakers.avif" class="card-img-top"><div class="card-body text-center"><h5 class="card-title">Sneakers</h5><p>Trendy white limited series</p><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div>
+    </div>
+  </section>
+
+  <section class="container product-section">
+    <h1>Jokers Shoes Collections</h1>
+    <div class="row g-4">
+      <div class="col-md-3 col-sm-6"><div class="card"><img src="joker.jpeg" class="card-img-top"><div class="card-body text-center"><h5 class="card-title">Jokers Shoes</h5><p>New arrival joker style</p><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div>
+      <div class="col-md-3 col-sm-6"><div class="card"><img src="jokerswhite.jpeg" class="card-img-top"><div class="card-body text-center"><h5 class="card-title">Jokers Shoes</h5><p>White joker collection</p><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div>
+      <div class="col-md-3 col-sm-6"><div class="card"><img src="man jokers.jpg" class="card-img-top"><div class="card-body text-center"><h5 class="card-title">Jokers Shoes</h5><p>Comfort meets trend</p><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div>
+      <div class="col-md-3 col-sm-6"><div class="card"><img src="jokersb.jpeg" class="card-img-top"><div class="card-body text-center"><h5 class="card-title">Jokers Shoes</h5><p>Bold black joker design</p><a href="#" class="btn btn-primary">Add to Cart</a></div></div></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div>
+        <h5>Zaac Shoe</h5>
+        <p>Every step tells your story — with comfort and class.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <a href="index07.html">Home</a>
+        <a href="aboutus.html">About</a>
+        <a href="collection.html">Collections</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>Email: support@zaacshoe.com</p>
+        <p>Phone: +92 300 1234567</p>
+        <p>Karachi, Pakistan</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Zaac Shoe | All Rights Reserved
+    </div>
+  </footer>
+
+</body>
+</html>

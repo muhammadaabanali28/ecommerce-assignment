@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Zaac Shoe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    /* Logo */
+    .logo {
+      max-width: 80px;
+    }
+
+    .logo img {
+      width: 100%;
+    }
+
+    /* Navbar */
+    .navbar2 {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .icon-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 42px;
+      width: 42px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+
+    .icon-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .icon-btn:hover {
+      background-color: black;
+      color: white;
+    }
+
+    /* Navbar Links */
+    a {
+      color: black;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: gray;
+    }
+
+    /* Contact Section */
+    h1 {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: rgb(38, 45, 45);
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .form-control {
+      height: 50px;
+      border-radius: 8px;
+    }
+
+    textarea.form-control {
+      height: 120px;
+    }
+
+    .btn-custom {
+      background-color: beige;
+      color: black;
+      border: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .pen {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      border-radius: 10px;
+      background-color: #fff;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #212529;
+      color: #f8f9fa;
+      padding: 50px 0 30px 0;
+      margin-top: 70px;
+    }
+
+    footer h5 {
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer ul li {
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      color: #f8f9fa;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    footer a:hover {
+      color: #d1b87e;
+    }
+
+    footer hr {
+      background-color: #f8f9fa;
+    }
+
+    .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 38px;
+      width: 38px;
+      border-radius: 50%;
+      background-color: #343a40;
+      margin-right: 10px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      background-color: #d1b87e;
+      color: black;
+    }
+
+    .social-icons svg {
+      width: 18px;
+      height: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="container-fluid border border-2 d-flex flex-wrap justify-content-between align-items-center gap-5 py-2">
+    <div class="logo">
+      <img class="border border-3 rounded-circle" src="shoes logo.jpg" alt="logo" />
+    </div>
+
+    <nav class="nav d-none d-sm-block">
+      <ul class="nav gap-3">
+        <a href="index07.html"><li>Home</li></a>
+        <a href="aboutus.html"><li>About</li></a>
+        <a href="collection.html"><li>Collections</li></a>
+        <a href="#"><li>Contact</li></a>
+        <li><input type="search" placeholder="Search items" /></li>
+      </ul>
+    </nav>
+
+    <div class="navbar2">
+      <button class="icon-btn">
+       <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+</svg>
+      </button>
+      <button class="icon-btn">
+         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
+  <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+  <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"/>
+</svg>
+ </button>
+      <button class="icon-btn">
+               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-check" viewBox="0 0 16 16">
+  <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+  <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"/>
+</svg>
+     
+      </button>
+    </div>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <div class="container my-5">
+    <h1>Contact Us</h1>
+    <div class="pen mt-4">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <input class="form-control" type="text" placeholder="Name" />
+        </div>
+        <div class="col-md-6">
+          <input class="form-control" type="email" placeholder="E-mail" />
+        </div>
+        <div class="col-12">
+          <input class="form-control" type="number" placeholder="Phone number" />
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" placeholder="Comment"></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <a href="successfuly.html"><button type="submit" class="btn btn-custom px-4 py-2">Send</button></a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <!-- About -->
+        <div class="col-md-4 col-sm-12 mb-4">
+          <h5>Zaac Shoe</h5>
+          <p>
+            Your one-stop destination for stylish and comfortable footwear.
+            Explore our latest collections and step into confidence.
+          </p>
+          <div class="social-icons">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M8.94 6.588H10V5.05a6.6 6.6 0 0 0-1.007-.05c-1.007 0-1.696.607-1.696 1.724v.964H6v1.538h1.297V14h1.638V8.126h1.238l.194-1.538H8.94z"/>
+            </svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5m0-1A3.5 3.5 0 1 1 8 12a3.5 3.5 0 0 1 0-7z"/>
+              <path d="M13.5 3a.5.5 0 0 1 .5.5V5a.5.5 0 0 1-.5.5H12A.5.5 0 0 1 11.5 5V3.5a.5.5 0 0 1 .5-.5h1.5z"/>
+              <path d="M4.002 1h7.996A3.004 3.004 0 0 1 15 4.002v7.996A3.004 3.004 0 0 1 11.998 15H4.002A3.004 3.004 0 0 1 1 11.998V4.002A3.004 3.004 0 0 1 4.002 1zM4 0A4 4 0 0 0 0 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4H4z"/>
+            </svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+              <path d="M8.051 1.999c-2.02 0-3.89.172-5.11.444C1.265 2.623 1 3.775 1 4.91v6.18c0 1.136.265 2.287 1.941 2.466 1.22.272 3.09.444 5.11.444 2.02 0 3.89-.172 5.11-.444C14.735 13.377 15 12.225 15 11.09V4.91c0-1.135-.265-2.287-1.939-2.466C11.941 2.171 10.07 2 8.051 2zm-1.466 4.52 4.122 2.48-4.122 2.48V6.52z"/>
+            </svg></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index07.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="collection.html">Collections</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h5>Contact Us</h5>
+          <ul>
+            <li>Email: <a href="mailto:info@zaacshoe.com">info@zaacshoe.com</a></li>
+            <li>Phone: +92 300 1234567</li>
+            <li>Location: Karachi, Pakistan</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 Zaac Shoe. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
